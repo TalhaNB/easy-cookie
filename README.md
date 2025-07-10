@@ -19,6 +19,12 @@ You could add a path if you want, by default it's set to be "/"
 Cookie.set('name', 'value', 60*24*365, document.location)
 ```
 
+You could add a domain if you want, this is useful when working with sub-domains. (just name no prefix or postfix)
+
+```javascript
+Cookie.set('name', 'value', 60*24*365, document.location, mydomain)
+```
+
 So, overall set function takes 4 params, (name, value, expiry, path)
 
 ### Get Cookie
@@ -33,7 +39,7 @@ Pretty straightforward, returns the value of the cookie if it exits, 'undefined'
 Cookie.remove('name')
 ```
 
-Removes the cookie with that name if it exists, obviously.
+Removes the cookie with that name if it exists, obviously. (This prolly won't work well for TS version yet...)
 
 ### Exists Cookie
 ```javascript
@@ -45,4 +51,4 @@ Checks if a cookie is currently set on the client by the provided name. Returns 
 ---
 That's about it &nbsp; 🤷
 
-Note: Might make a TypeScript version soon or maybe update the laziness out of this one.
+Note: ~Might make a TypeScript version soon or maybe update the laziness out of this one.~ Addedf typescript version.
