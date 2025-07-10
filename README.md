@@ -51,4 +51,4 @@ Checks if a cookie is currently set on the client by the provided name. Returns 
 ---
 That's about it &nbsp; 🤷
 
-Note: ~Might make a TypeScript version soon or maybe update the laziness out of this one.~ Addedf typescript version.
+Note: ~Might make a TypeScript version soon or maybe update the laziness out of this one.~ Added typescript version.

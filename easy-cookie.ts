@@ -40,5 +40,9 @@ export function useCookies() {
     setCookie(cookieName, "", -100);
   }
 
-  return { setCookie, getCookie, removeCookie }
+  const cookieExists = (cookieName: string) => {
+    typeof getCookie(cookieName) !== "undefined"
+  }
+
+  return { setCookie, getCookie, removeCookie, cookieExists }
 }
