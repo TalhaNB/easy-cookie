@@ -25,7 +25,8 @@ You could add a domain if you want, this is useful when working with sub-domains
 Cookie.set('name', 'value', 60*24*365, document.location, mydomain)
 ```
 
-So, overall set function takes 4 params, (name, value, expiry, path)
+So, overall set function takes 5 params, (name (required), value (required), expiry (optional), path (optional), domain (optional))
+
 
 ### Get Cookie
 ```javascript
